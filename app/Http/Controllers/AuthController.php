@@ -30,7 +30,6 @@ class AuthController extends Controller
     }
 
 
-
     public function register(Request $request)
     {
         // Implement user registration logic
