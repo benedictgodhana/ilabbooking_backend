@@ -28,6 +28,12 @@ Route::get('/getRoles', [RoleController::class, 'getRoles']);
 Route::post('/users', [UserController::class, 'store']);
 Route::put('/users/{id}', [UserController::class, 'update']);
 Route::delete('/users/{id}', [UserController::class, 'destroy']);
+Route::post('/addRoom', [RoomController::class,'addRoom']);
+Route::put('/rooms/{id}', [RoomController::class, 'update']);
+Route::delete('/rooms/{id}', [RoomController::class,'destroy']);
+
+
+
 
 
 Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout']);
